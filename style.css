@@ -97,6 +97,7 @@ body {
 .img img {
     width: 90px;
     height: 90px;
+    filter: grayscale(100%);
     /* margin-left: -35px; */
 }
 
