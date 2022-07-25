@@ -2,4 +2,5 @@
 Pokedex com HTML, CSS e JavaScript Puro.
 
 
-![image](https://user-images.githubusercontent.com/81834620/180694764-2127fb52-d097-4bff-8c4c-449ecdd97c7f.png)
+![image](https://user-images.githubusercontent.com/81834620/180695320-9f6ada19-c295-431e-8039-d652c9e5407b.png)
+
