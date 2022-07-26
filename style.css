@@ -39,7 +39,7 @@ body {
     height: 495px;
     background-color: var(--gameColor);
     border-radius: 10px 40px 10px 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37) inset;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37) inset, 0 0 15px rgba(0, 0, 0, 0.67) inset;
 }
 .cScreen{    
     width: 288px;
@@ -52,7 +52,7 @@ body {
 .screen{     
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 263px;
     height: 170px;
@@ -60,10 +60,11 @@ body {
     background-color: var(--screen);
     margin: 0.9em ;
     box-shadow: 5px 5px 10px rgba(0,0,0, 0.5) inset, -2px -2px 10px rgba(0,0,0, 0.25) inset;
+    padding: 5px;
 }
 
 .dPokemon .namePokemon{
-   width: 200px;
+   width: 250px;
    
 }
 .dPokemon  h1 {
@@ -71,20 +72,23 @@ body {
     font-size: 20px;
     font-weight: 200;
     color: var(--fontScreenColor);
+    text-align: center;
+    
 }
 .containerscrren2 {
     display: flex;
-    justify-content: space-around; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 98%;
     
 }
 .atPokemon {
-    display: flex;
-    flex-direction: column;
+    display: flex;    
     font-family: var(--fontFamily);
     font-size: 15px;
     font-weight: 200;
-    width: 100px;
-    margin-left: -30px ;
+    width: 98%;   
    
 }
 .atPokemon h2 {
@@ -92,12 +96,15 @@ body {
     font-size: 15px;
     font-weight: 200;
     color: var(--fontScreenColor);
+    text-align: start;
+    width: 98%;
 }
 
 .img img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     filter: grayscale(100%);
+    margin-bottom: 10px;
     /* margin-left: -35px; */
 }
 
@@ -137,3 +144,24 @@ body {
     color: #EDEDED;
     box-shadow: 0px 0px 5px rgba(0,0,0, 0.5)
 }
+
+.btn3 {
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border-width: 0;
+    background-color: var(--button);
+    color: #EDEDED;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.5);
+    font-size: 13px;
+    font-weight: bold;    
+}
+
+.reseteBtn {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -15px;
+}
+

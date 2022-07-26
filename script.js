@@ -8,8 +8,9 @@ const form = document.querySelector('#form');
 const input = document.querySelector('#inputSearch');
 const buttonV = document.querySelector('#btn1');
 const buttonP = document.querySelector('#btn2');
+const buttonR = document.querySelector('#btn3');
 
-// const ataque = document.querySelector('#ataque');
+const tp = document.querySelector('#ataque');
 
 let seacrPok = 1;
 
@@ -28,13 +29,17 @@ const render = async (pokemon) => {
 
     if(data){
         pokename.innerHTML =`${data.id} - ${data.name}`;        
-        seacrPok = data.id;
+        seacrPok = data.id;             
         pokeImage.src = data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_shiny"];
+        tp.innerHTML = ` Tp: ${data["types"][0]["type"]["name"]}`;
         input.value = ''
+
+        console.log(hp)
     }
 
     else {
-        pokename.innerHTML = 'Ops, Não existe!'
+        pokename.innerHTML = 'Ops, Não existe!';
+        pokeImage.src = '';
     }
 
     console.log(data);
@@ -55,6 +60,12 @@ buttonP.addEventListener("click", () => {
 
 buttonV.addEventListener("click", () => {
     seacrPok -= 1;
+    render(seacrPok);
+
+})
+
+buttonR.addEventListener("click", () => {
+    seacrPok = 1;
     render(seacrPok);
 })
 
