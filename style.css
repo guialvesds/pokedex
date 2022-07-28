@@ -129,6 +129,7 @@ body {
     align-items: center;
     height: 90px;
     margin-top: 50px;
+   
 }
 
 .inputButtons  input {
@@ -138,6 +139,7 @@ body {
     border-width: 0;
     padding-left: 10px;
     color: #9e9ea7;
+    outline: none;
 }
 
 .btn1 {

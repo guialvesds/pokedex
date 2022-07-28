@@ -42,8 +42,13 @@ const render = async (pokemon) => {
     }
 
     else {
-        pokename.innerHTML = 'Ops, Não existe!';
+        pokename.innerHTML = 'Ops, Não encontrado.';
+        pokename.style.marginTop = '25px'
         pokeImage.src = '';
+        tp.innerHTML = 'Tp: ???';
+        hp.innerHTML = 'Hp: ???';    
+        at.innerHTML = 'At: ???';    
+        input.value = ''
     }
 
     console.log(data);
