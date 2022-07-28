@@ -11,6 +11,8 @@ const buttonP = document.querySelector('#btn2');
 const buttonR = document.querySelector('#btn3');
 
 const tp = document.querySelector('#ataque');
+const hp = document.querySelector('#hp');
+const at = document.querySelector('#at');
 
 let seacrPok = 1;
 
@@ -32,9 +34,11 @@ const render = async (pokemon) => {
         seacrPok = data.id;             
         pokeImage.src = data["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_shiny"];
         tp.innerHTML = ` Tp: ${data["types"][0]["type"]["name"]}`;
+         hp.innerHTML = `Hp: ${data["stats"][0]["base_stat"]}`;
+         at.innerHTML = `At: ${data["stats"][1]["base_stat"]}`;
         input.value = ''
 
-        console.log(hp)
+       // console.log(hp)
     }
 
     else {
